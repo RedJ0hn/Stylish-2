@@ -22,4 +22,13 @@ extension UIView : Styleable {
             return _styles
         }
     }
+    
+    public func applyStyle(_ style: StyleClassMap) {
+        apply(style: style)
+    }
+    
+    public func parseStyles(style: StyleClassMap, map: [StyleClassMap]) {
+        parseMultipleStyles(style: style, map: map)
+    }
+    
 }
